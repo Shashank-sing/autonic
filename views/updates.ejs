@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Electric vehicles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles1.css">
+
+
+</head>
+
+<body>
+    <div class="top-bar">
+
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <p class="navbar-brand"> <span class="p1">A</span>utonic</p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="nav-div collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link title-anchor" href="">
+                            Sign Up
+                        </a> </li>
+                    <li class="nav-item ">
+                        <a class="nav-link title-anchor" href="">
+                            Trends
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link title-anchor" href="">
+                            Know Us
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="suspension">
+
+        <h1>BLOGS</h1>
+
+        <% blogs.forEach(function(blog) { %>
+        <div class="card sc">
+            <div class="card-header">
+                <h3><%= blog.title %></h3>
+                <br>
+                <p class="sp"><%= blog.author %></p>
+            </div>
+            <div class="card-body">
+                <p class="sp"><%= blog.body.substring(0,50) %>...</p>
+                <a href="/updates/blog/<%= blog["_id"] %>">Read More</a>
+                <br>
+            </div>
+        </div>
+        <% }) %>
+
+    </div>
+
+    <div class="policies">
+
+        <h1>GOVERNMENT POLICIES</h1>
+
+        <div class="card sc">
+            <div class="card-header">
+                <h3>Electricity rates</h3>
+            </div>
+            <div class="card-body">
+                <p class="sp">Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+            </div>
+        </div>
+
+        <div class="card sc">
+            <div class="card-header">
+                <h3>New Tax Policies</h3>
+            </div>
+            <div class="card-body">
+                <p class="sp">Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="articles">
+        <h1>ARTICLES</h1>
+        <% articles.forEach(function(article) { %>
+        <a href="/updates/article/<%= article["_id"] %>">
+            <div class="card article-card">
+                <div class="card-body article-body-1">
+                    <p class="sp p-articles"><%= article.title %></p>
+                    <p class="text-light"><%= article.body.substring(0,50) %>...</p>
+                    <br>
+                </div>
+                <div class="card-footer">
+                    <p><%= article.author %></p>
+                </div>
+            </div>
+
+        </a>
+        <% }) %>
+
+
+    </div>
+
+
+</body>
+
+</html>
+
+
+<%- include("partials/footer")%>

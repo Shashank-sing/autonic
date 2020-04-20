@@ -1,0 +1,91 @@
+body{
+    font-family: 'Ubuntu';
+    background-color: #e1f2fb;
+  }
+
+  .policies{
+    position : fixed;
+     width: 300px;
+    margin-left: 1190px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .text-light {
+      font-size: 1.5rem;
+  }
+  
+  /* TOP BAR*/
+  .top-bar{
+    background-image: url("https://www.tesla.com/ns_videos/homepage/main_hero_homepage_mobile.jpg");
+      background-size: cover;
+  }
+  .navbar-brand{
+    margin-left: 50px;
+    font-size: 2rem;
+    font-family: 'Comfortaa';
+    margin-bottom: 0;
+  }
+  .nav-item{
+     margin-left: 10px;
+     margin-right: 10px;
+  }
+  .navbar{
+    padding : 0;
+  }
+  #navbarNav{
+    margin-right: 120px;
+  }
+  .p1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Great Vibes'
+  }
+  
+  
+  /* SUSPENSION */
+  .suspension{
+    position : fixed;
+     width: 300px;
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .sc{
+    margin-bottom: 10px;
+    width: 300px;
+  }
+  .sp{
+      margin-bottom: 0;
+  }
+  /* ARTICLES */
+  .article-card{
+    margin-bottom: 50px;
+  }
+  .articles{
+    margin-left: 440px;
+    margin-top: 30px;
+    width :700px;
+    text-align: center;
+  }
+  .article-body-1{
+    height: 450px;
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url("https://cdn.vox-cdn.com/thumbor/VPJOLKDBd4MseHilaHS3ENL9kF8=/0x0:910x640/1200x800/filters:focal(383x248:527x392)/cdn.vox-cdn.com/uploads/chorus_image/image/63137313/4190227eng_01.0.jpg");
+  }
+  .article-body-2{
+    height: 450px;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),url("https://vignette.wikia.nocookie.net/c499b5b4-2f42-40f4-91e1-08cade36ef2f/scale-to-width-down/800");
+  }
+  .p-articles{
+    margin-top: 100px;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .articles a {
+    text-decoration : none;
+  }
+
+  
